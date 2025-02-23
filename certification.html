@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Certificates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .participants {
+            margin-top: 20px;
+        }
+        .participant {
+            margin-bottom: 10px;
+        }
+        .certificate {
+            font-style: italic;
+            margin-top: 5px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+        .winner {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event Certificates</h1>
+
+    <div class="participants">
+        <div class="participant">
+            <span class="name">John Doe</span>
+            <div class="certificate" onclick="openCertificate('certificate_participation.jpg')">Certificate of Participation</div>
+        </div>
+        
+        <div class="participant">
+            <span class="name">Jane Smith</span>
+            <div class="certificate winner" onclick="openCertificate('certificate_participation.jpg')">Certificate of Participation</div>
+        </div>
+
+        <div class="participant">
+            <span class="name">Shreyas</span>
+            <div class="certificate winner" onclick="openCertificate('certificate_participation.jpg')">Certificate of Participation</div>
+        </div>
+
+        <div class="participant">
+            <span class="name">student 3</span>
+            <div class="certificate winner" onclick="openCertificate('certificate_participation.jpg')">Certificate of Participation</div>
+        </div>
+
+        <div class="participant">
+            <span class="name">student 4</span>
+            <div class="certificate winner" onclick="openCertificate('certificate_participation.jpg')">Certificate of Participation</div>
+        </div>
+     
+    </div>
+
+    <script>
+        function openCertificate(imagePath) {
+            window.open(imagePath, '_blank');
+        }
+    </script>
+
+</body>
+</html>

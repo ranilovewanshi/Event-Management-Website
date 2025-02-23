@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regisform.css">
+    <title>Badminton Form</title>
+</head>
+<body>
+
+    <div class="banner">
+        <h1>Badminton Registration</h1>
+    </div>
+
+    <form class="container form">
+
+        <div class="flex2">
+
+            <div class="one">
+                <label for="name">Name</label><br/>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+        
+            <fieldset class="one">
+                <legend>Gender</legend>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="Male" required/>
+                    <label for="male">Male</label>
+                
+                    <input type="radio" id="female" name="gender" value="Female" required />
+                    <label for="female">Female</label>
+    
+                    <input type="radio" id="other" name="gender" value="Prefer not to say" required />
+                    <label for="other">Prefer not to say</label>
+                </div>
+            </fieldset>
+
+        </div>
+        
+        <div class="flex">
+            <label for="badminton-type">Choose Badminton Type:</label><br/>
+            <input type="radio" id="singles" name="badminton-type" value="Singles" required/>
+            <label for="singles">Singles</label>
+
+            <input type="radio" id="doubles" name="badminton-type" value="Doubles" required />
+            <label for="doubles">Doubles</label>
+        </div>
+
+        <div class="flex2">
+
+            <div class="one">
+                <label for="email">Email Id</label><br/>
+                <input type="email" id="email" placeholder="Enter Your Email Id" required>
+            </div>
+
+            <div class="one">
+                <label for="mobile">Mobile no.</label><br/>
+                <input type="tel" id="mobile" placeholder="Enter Your Mobile No." required>
+            </div>
+
+        </div>
+
+        <div class="flex">
+            <label for="file">Your Image</label><br/>
+            <input type="file" id="file"  required>
+        </div>
+
+        <div class="flex3">
+            <div class="two">
+                <label for="branch-section">Your Branch and Section</label><br/>
+                <input type="text" id="branch-section" placeholder="Enter Your Branch and Section" required>
+            </div>
+            <div class="two">
+                <label for="current-year">Current Year</label><br/>
+                <input type="text" id="current-year" placeholder="Enter Your Current Year" required>
+            </div>
+            <div class="two">
+                <label for="department">Department Name</label><br/>
+                <input type="text" id="department" placeholder="Enter Your Department Name" required>
+            </div>
+        </div>
+
+        <div class="flex">
+            <label for="instagram">Instagram ID</label><br/>
+            <input type="url" id="instagram" placeholder="Enter Your Instagram ID" required>
+        </div>
+
+        
+       
+        <div class="div">
+            <input type="submit" class="submit" value="SUBMIT">
+        </div>
+    
+    </form>
+</body>
+</html>

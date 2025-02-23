@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="1.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="2.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="3.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="4.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="5.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="6.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="7.jpeg" alt="Error loading image" width="650" height="200">
+    <img src="8.jpeg" alt="Error loading image" width="650" height="200">
+  </div>
+
+</body>
+</html>
